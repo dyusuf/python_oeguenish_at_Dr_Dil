@@ -1,0 +1,1124 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Learn Python @ Dr. Dil" href="../../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   Learn Python @ Dr. Dil
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dictionary
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/chapters/data_structure/dictionary.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/dyusuf/python_oeguenish_at_Dr_Dil"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/dyusuf/python_oeguenish_at_Dr_Dil/issues/new?title=Issue%20on%20page%20%2Fchapters/data_structure/dictionary.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/dyusuf/python_oeguenish_at_Dr_Dil/main?urlpath=tree/docs/chapters/data_structure/dictionary.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bir-mesile">
+   Bir Mesile
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hel-qilish-charisi-bir-dictionary-qurush">
+   Hel qilish charisi: bir “Dictionary” qurush
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arqiliq-dictionary-qurush">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       {}
+      </span>
+     </code>
+     arqiliq dictionary qurush
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dict-arqiliq-dictionary-qurush">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict()
+      </span>
+     </code>
+     arqiliq dictionary qurush
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-gha-erishish">
+   Dictionary gha erishish
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bir-maddining-qimmitini-tepish">
+     Bir maddining qimmitini tepish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hemme-key-largha-erishish">
+     Hemme “Key”  largha erishish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hhemme-value-largha-erishish">
+     Hhemme “value” largha erishish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hemme-maddilarghe-erishish">
+     Hemme maddilarghe erishish
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-ning-alahidilikliri">
+   <strong>
+    Dictionary
+   </strong>
+   ning alahidilikliri
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-lar-has-bolishi-kirek">
+     <strong>
+      Key
+     </strong>
+     lar has bolishi kirek
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-value-juplirining-sanliq-melumat-tipining-cheklimiliri">
+     “key : value” jüplirining sanliq melumat tipining cheklimiliri
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-lar-ozgurushchan-bolidu">
+   “Dictionary” lar özgürüshchan bolidu
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#value-ni-ozgertish">
+     “Value”ni özgertish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#madda-qoshush">
+     Madda qoshush
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maddilarni-chiqiriwetish">
+     maddilarni chiqiriwetish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aliasing-yene-bir-isim-qoyush-we-kochurush">
+     “Aliasing”(yene bir isim qoyush) we köchürüsh
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bashqa-dictionary-meshghulatliri">
+   Bashqa “Dictionary” meshghulatliri
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Dictionary</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bir-mesile">
+   Bir Mesile
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hel-qilish-charisi-bir-dictionary-qurush">
+   Hel qilish charisi: bir “Dictionary” qurush
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arqiliq-dictionary-qurush">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       {}
+      </span>
+     </code>
+     arqiliq dictionary qurush
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dict-arqiliq-dictionary-qurush">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict()
+      </span>
+     </code>
+     arqiliq dictionary qurush
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-gha-erishish">
+   Dictionary gha erishish
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bir-maddining-qimmitini-tepish">
+     Bir maddining qimmitini tepish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hemme-key-largha-erishish">
+     Hemme “Key”  largha erishish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hhemme-value-largha-erishish">
+     Hhemme “value” largha erishish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hemme-maddilarghe-erishish">
+     Hemme maddilarghe erishish
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-ning-alahidilikliri">
+   <strong>
+    Dictionary
+   </strong>
+   ning alahidilikliri
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-lar-has-bolishi-kirek">
+     <strong>
+      Key
+     </strong>
+     lar has bolishi kirek
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key-value-juplirining-sanliq-melumat-tipining-cheklimiliri">
+     “key : value” jüplirining sanliq melumat tipining cheklimiliri
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-lar-ozgurushchan-bolidu">
+   “Dictionary” lar özgürüshchan bolidu
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#value-ni-ozgertish">
+     “Value”ni özgertish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#madda-qoshush">
+     Madda qoshush
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maddilarni-chiqiriwetish">
+     maddilarni chiqiriwetish
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aliasing-yene-bir-isim-qoyush-we-kochurush">
+     “Aliasing”(yene bir isim qoyush) we köchürüsh
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bashqa-dictionary-meshghulatliri">
+   Bashqa “Dictionary” meshghulatliri
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="dictionary">
+<h1>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bir-mesile">
+<h2>Bir Mesile<a class="headerlink" href="#bir-mesile" title="Permalink to this headline">¶</a></h2>
+<p>Melum bir konkért <a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/0/0c/UEY_ULY_Elipbesi_Kichik.jpg?1641220049679">heripni</a> öz ichige alghan uyghurche sözni qandaq tépish?</p>
+<p>Bu mesilini yeshish üchün aldi bilen bu mesilini töwendiki kichik tarmaq mesilige parchilaymiz:</p>
+<ul class="simple">
+<li><p>tarmaq masile 1: herpler we alaqidar sözlerni qandaq baghlash kirek ?</p></li>
+<li><p>tarmaq mesile 2: qandaq qilip belgilengen bir herip arqiliq alaqidar sözni tapimiz ?</p></li>
+</ul>
+</div>
+<div class="section" id="hel-qilish-charisi-bir-dictionary-qurush">
+<h2>Hel qilish charisi: bir “Dictionary” qurush<a class="headerlink" href="#hel-qilish-charisi-bir-dictionary-qurush" title="Permalink to this headline">¶</a></h2>
+<p>“Dictionary” ning sanliq melumat qurulmisi ikki sanliq qimmet toplimini baghlashqa ishlitilidu. bir sanliq qimmet toplimi bolsa körsetküch(<strong>keys</strong> dep atilidu), yene bir sanliq qimmet toplimi bolsa mas haldiki qimmettur(<strong>values</strong> dep atilidu). ikkisining baghlinishi bolsa <strong>key:value jüpi</strong> bilen ipadilinidu, her bir <strong>key</strong> arqiliq mas haldiki <strong>value</strong> ge erishkili bolidu. bu seweptin yuqiridiki mesilini <strong>dictionary</strong> arqiliq yeshkili bolidu.
+Izahat: “Jüp” bu materyalda <strong>Pair</strong> ning ornigha ishlitilgen.</p>
+<p><img alt="" src="../../_images/dictionary_concept.png" /></p>
+<div class="section" id="arqiliq-dictionary-qurush">
+<h3><code class="docutils literal notranslate"><span class="pre">{}</span></code> arqiliq dictionary qurush<a class="headerlink" href="#arqiliq-dictionary-qurush" title="Permalink to this headline">¶</a></h3>
+<p>Tarmaq mesile 1 ni yeshish üchün, bir <strong>dictionary</strong> qurush arqiliq uyghurche herpler bilen mas haldiki uyghurche sözlerni bir birige baghlighli bolidu, uyghurche herpler we uyghurche sözler bolsa bu <strong>dictionary</strong> diki <strong>key : value</strong> jüpliridur.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tarmaq mesile 1 ni yeshish.</span>
+<span class="c1"># Büdür tirnaq {} ning ichige pesh arqiliq ayrilghan &quot;key :value&quot; jüpi toplimini yazimiz.</span>
+<span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">),</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt; {&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tarmaq mesile 2 ni yeshish üchün, bir herpni <strong>key</strong> qilish arqiliq, shu heripke baghlinishliq sözni tapqili bolidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tarmaq mesile 2 ni yeshish</span>
+<span class="c1"># &#39;p&#39; heripige munasiwetlik bir sözni tepish üchün, peqet &#39;p&#39; herpini &quot;Key&quot; süpitide ottura tirnaqning [] </span>
+<span class="c1"># ichige alsaqla bolidu.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>paqa
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dict-arqiliq-dictionary-qurush">
+<h3><code class="docutils literal notranslate"><span class="pre">dict()</span></code> arqiliq dictionary qurush<a class="headerlink" href="#dict-arqiliq-dictionary-qurush" title="Permalink to this headline">¶</a></h3>
+<p>Ikki maddiliq tertipler toplimini, <code class="docutils literal notranslate"><span class="pre">dict()</span></code> arqiliq <strong>dictionary</strong> gha aylandurghili bolidu. Herbir tertiptiki birinci madde bolsa <strong>key</strong>, ikkinci madde bolsa <strong>value</strong> süpitide ishlitilidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#ikki maddiliq &quot;Tuple&quot; lardin terkip tapqan &quot;List&quot; arqiliq &quot;Dictionary&quot; qurush</span>
+<span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;paqa&#39;</span><span class="p">),</span>
+                  <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;béliq&#39;</span><span class="p">),</span>
+                  <span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;eynek&#39;</span><span class="p">)]</span>
+
+<span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ikki tertiptin bir <strong>dictionary</strong> qurush üchün, <code class="docutils literal notranslate"><span class="pre">dict()</span></code> we <code class="docutils literal notranslate"><span class="pre">zip()</span></code> mitodini bille ishletsek bolidu. Birinci tertip bolsa <strong>dictionary</strong> ning <strong>keys</strong> liri, ikkinci tertip bolsa <strong>dictionary</strong> ning <strong>value</strong> liri bolidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#ikki tane &quot;list&quot; arqiliq dictionary qurush</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">]</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;eynek&#39;</span><span class="p">]</span>
+
+<span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dictionary-gha-erishish">
+<h2>Dictionary gha erishish<a class="headerlink" href="#dictionary-gha-erishish" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bir-maddining-qimmitini-tepish">
+<h3>Bir maddining qimmitini tepish<a class="headerlink" href="#bir-maddining-qimmitini-tepish" title="Permalink to this headline">¶</a></h3>
+<p>Körsetküch numur tertipliri bilen <strong>dictionary</strong> ge erishkili bolmaydu, eksiche, yuqirda körsitilgini boyche, <strong>keys</strong> larni körsetküchi ornida ishlitip munasiwetlik qimmetlirige erishkili bolidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+
+<span class="c1"># Ottuar tirnaq [] ichige &quot;dictionary&quot; ning achquq (key) lirini qoyush arqiliq,&quot;dictionary&quot; ning </span>
+<span class="c1"># qimmet(value) lirige erisheleymiz.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>béliq
+</pre></div>
+</div>
+</div>
+</div>
+<p>Eger “dictionary” da bolmighan bir “key” ni ishletkende, <code class="docutils literal notranslate"><span class="pre">KeyError</span></code> chiqidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+
+<span class="c1"># Mewjut bolmighan &quot;key&quot; ni ishlitish</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;ö&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1697</span><span class="o">/</span><span class="mf">3828779829.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Mewjut bolmighan &quot;key&quot; ni ishlitish</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;ö&#39;</span><span class="p">])</span>
+
+<span class="ne">KeyError</span>: &#39;ö&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bundaq <code class="docutils literal notranslate"><span class="pre">KeyError</span></code>lardin saqlinish üchün get() usulini ishletsingiz bulidu. eger kirgüzülgen “key”, “Dictionary” da bolsa, o “key” ge munasiwetlik qimmetni chiqirip beridu, eksiche, <code class="docutils literal notranslate"><span class="pre">None</span></code> chiqiridu. bu seweptin, get() usulu hergiz <code class="docutils literal notranslate"><span class="pre">KeyError</span></code> keltürüp chiqarmaydu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mewjut &quot;key&quot; larning qimmitige erishish.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>paqa
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mewjut bolmighan &quot;key&quot; larinig aldin belgilengen qimmitige erishish.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ö&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>None
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hemme-key-largha-erishish">
+<h3>Hemme “Key”  largha erishish<a class="headerlink" href="#hemme-key-largha-erishish" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">keys()</span></code> usuli “dictionary” diki hemme “key” larning yighindisini chiqirip beridu. Netije <code class="docutils literal notranslate"><span class="pre">dict_keys</span></code> tiki maddilargha körsetküch (index) arqiliq erishkili bolmaydu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+
+<span class="n">all_keys</span> <span class="o">=</span> <span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">all_keys</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;p&#39;, &#39;b&#39;, &#39;e&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># netije `dict_keys` tiki maddilargha körsetküch (index) arqiliq erishkili bolmaydu</span>
+<span class="n">all_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">69</span><span class="o">-</span><span class="mi">24</span><span class="n">d1f967b78a</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># netije `dict_keys` tiki maddilargha körsetküch (index) arqiliq erishkili bolmaydu</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">all_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="ne">TypeError</span>: &#39;dict_keys&#39; object does not support indexing
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># &quot;dict_keys&quot; ni &quot;list&quot; ke aylandurush.</span>
+<span class="n">keys_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">all_keys</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">keys_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">keys_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;p&#39;, &#39;b&#39;, &#39;e&#39;]
+p
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hhemme-value-largha-erishish">
+<h3>Hhemme “value” largha erishish<a class="headerlink" href="#hhemme-value-largha-erishish" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">values()</span></code> usuli “dictionary” diki hemme “value” larning yighindisini chiqirip beridu. Netije <code class="docutils literal notranslate"><span class="pre">dict_values</span></code> tiki maddilargha körsetküch (index) arqiliq erishkili bolmaydu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_values([&#39;paqa&#39;, &#39;béliq&#39;, &#39;eynek&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hemme-maddilarghe-erishish">
+<h3>Hemme maddilarghe erishish<a class="headerlink" href="#hemme-maddilarghe-erishish" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">items()</span></code> usuli “dictionary” diki hemme “key:value” jüplirining yighindisini chiqirip beridu. Netije <code class="docutils literal notranslate"><span class="pre">dict_items</span></code> tiki maddilargha körsetküch (index) arqiliq erishkili bolmaydu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_items([(&#39;p&#39;, &#39;paqa&#39;), (&#39;b&#39;, &#39;béliq&#39;), (&#39;e&#39;, &#39;eynek&#39;)])
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dictionary-ning-alahidilikliri">
+<h2><strong>Dictionary</strong> ning alahidilikliri<a class="headerlink" href="#dictionary-ning-alahidilikliri" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="key-lar-has-bolishi-kirek">
+<h3><strong>Key</strong> lar has bolishi kirek<a class="headerlink" href="#key-lar-has-bolishi-kirek" title="Permalink to this headline">¶</a></h3>
+<p>Eger qaytilanghan “key” larni ishlitip dictionary qurghanda, “key” ning esli qimmiti qaytilanghan “key” ning qimmiti teripidin özgertiliwitilidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#&quot;key&quot; ning esli qimmiti qaytilanghan &quot;key&quot; ning qimmiti teripidin özgertiliwitilidu.</span>
+<span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;béliq&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="key-value-juplirining-sanliq-melumat-tipining-cheklimiliri">
+<h3>“key : value” jüplirining sanliq melumat tipining cheklimiliri<a class="headerlink" href="#key-value-juplirining-sanliq-melumat-tipining-cheklimiliri" title="Permalink to this headline">¶</a></h3>
+<p>“Key” lar herqandaq özgermes sanliq melumat tipi bolalaydu, “value” lar bolsa herqanda bir sanliq malumat tipi bolalaydu. mesilen “key” lar <code class="docutils literal notranslate"><span class="pre">integer</span></code> , <code class="docutils literal notranslate"><span class="pre">string</span></code>, yaki <code class="docutils literal notranslate"><span class="pre">tuple</span></code> bolalaydu, lekin <code class="docutils literal notranslate"><span class="pre">list</span></code> bolalmaydu, chünki <code class="docutils literal notranslate"><span class="pre">list</span></code> lar bolsa özgirishchan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># key&quot; lar &quot;integer&quot; , &quot;string&quot;, yaki &quot;tuple&quot; bolalaydu</span>
+<span class="c1"># &quot;value&quot; lar bolsa herqanda bir sanliq malumat tipi bolalaydu</span>
+<span class="n">a_dict</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;Dilmurat&#39;</span><span class="p">:</span> <span class="mi">44</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_dict</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1: True, &#39;Dilmurat&#39;: 44, (2, 2): [2, 2]}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#&quot;key&quot; lar &quot;list&quot; bolalmaydu, chünki &quot;list&quot; lar bolsa özgirishchan.</span>
+<span class="n">a_dict</span> <span class="o">=</span> <span class="p">{[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">76</span><span class="o">-</span><span class="mi">97</span><span class="n">daeb8add9e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#&quot;key&quot; lar &quot;list&quot; bolalmaydu, chünki &quot;list&quot; lar bolsa özgirishchan.</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">a_dict</span> <span class="o">=</span> <span class="p">{[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)}</span>
+
+<span class="ne">TypeError</span>: unhashable type: &#39;list&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dictionary-lar-ozgurushchan-bolidu">
+<h2>“Dictionary” lar özgürüshchan bolidu<a class="headerlink" href="#dictionary-lar-ozgurushchan-bolidu" title="Permalink to this headline">¶</a></h2>
+<p>“Dictionariy”lar özgürüshchan bolup, biz uni qurghandin kiyin ichidiki maddilarni almashturup, qoshup yaki eliweteleymiz.</p>
+<div class="section" id="value-ni-ozgertish">
+<h3>“Value”ni özgertish<a class="headerlink" href="#value-ni-ozgertish" title="Permalink to this headline">¶</a></h3>
+<p>“Dictionary” maddilirini yengilash bek asan, peqet “key” bilan maddilargha erishing we yengi “value”ni belgileng.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;özgertishtin burun:&#39;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;batur&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;özgergendin keyin:&quot;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>özgertishtin burun: {&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;}
+özgergendin keyin: {&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;batur&#39;, &#39;e&#39;: &#39;eynek&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="madda-qoshush">
+<h3>Madda qoshush<a class="headerlink" href="#madda-qoshush" title="Permalink to this headline">¶</a></h3>
+<p>“Dictionary” gha bir yengi “key” we uning “value”ni qoshush:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># quruq bir &quot;Dictionary&quot; yasang we uninggha &quot;key:value&quot; jüp ni qoshung</span>
+
+<span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;paqa&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;béliq&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;eynek&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{}
+{&#39;p&#39;: &#39;paqa&#39;}
+{&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;}
+{&#39;p&#39;: &#39;paqa&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Siz bir “Dictionary”ning maddilirini yene bir “Dictionary” gha kirghuzeleysiz. Shuni unutmangki, tekrarlanghan “key”ning “value” lar mevjut “value” lar ornini alidu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;paqa&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="s1">&#39;eynek&#39;</span><span class="p">}</span>
+<span class="n">new_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;at&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="s1">&#39;xoraz&#39;</span><span class="p">}</span>
+
+<span class="c1"># &quot;new_letters&quot; ning maddilirini &quot;Uyghur_letters&quot; gha kirgüzüsh</span>
+<span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_letters</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kirgüzgendin keyin:&#39;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>kirgüzgendin keyin: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;, &#39;a&#39;: &#39;at&#39;, &#39;x&#39;: &#39;xoraz&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="maddilarni-chiqiriwetish">
+<h3>maddilarni chiqiriwetish<a class="headerlink" href="#maddilarni-chiqiriwetish" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">pop()</span></code> ni ishlitip “key”ni chiqiriweting we “value”ni qayturung:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="s1">&#39;eynek&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;at&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="s1">&#39;xoraz&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;chiqiriwetishtin burun:&quot;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="c1"># &quot;pop()&quot; ni ishlitip &quot;key&quot;ni chiqiriweting we &quot;value&quot;ni qayturung</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;chiqiriwetilgen maddining &#39;value&#39;:&quot;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;chiqiriwetkendin keyin:&quot;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>chiqiriwetishtin burun: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;, &#39;a&#39;: &#39;at&#39;, &#39;x&#39;: &#39;xoraz&#39;}
+chiqiriwetilgen maddining &#39;value&#39;: xoraz
+chiqiriwetkendin keyin: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;, &#39;a&#39;: &#39;at&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>“del” ni ishlitip “value”ni qayturmayla öchiriweting:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="s1">&#39;eynek&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;at&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="s1">&#39;xoraz&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;öchiriwetishtin burun:&quot;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="c1">#&quot;del&quot; ni ishlitip &quot;value&quot;ni qayturmayla öchiriweting</span>
+
+<span class="k">del</span> <span class="n">Uyghur_letters</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;öchiriwetkendin keyin:&quot;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>öchiriwetishtin burun: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;, &#39;a&#39;: &#39;at&#39;, &#39;x&#39;: &#39;xoraz&#39;}
+öchiriwetkendin keyin: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;, &#39;e&#39;: &#39;eynek&#39;, &#39;a&#39;: &#39;at&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="aliasing-yene-bir-isim-qoyush-we-kochurush">
+<h3>“Aliasing”(yene bir isim qoyush) we köchürüsh<a class="headerlink" href="#aliasing-yene-bir-isim-qoyush-we-kochurush" title="Permalink to this headline">¶</a></h3>
+<p>“list” qa oxshash “dictionary” mu özgürüshchan bolghachqa,”Aliasing”(yene bir isim qoyush)ni bilishimiz kerak. Ikki özgergüchi oxshash nersini ipadiligende birsining özgürüshi yene birsigimu tesir qilidu. Eger bir “dictionary” ni özgertip, esli nushisidin bir nusha saqlap qoymaqchi bolsaq <code class="docutils literal notranslate"><span class="pre">copy()</span></code>ni ishlitimiz.</p>
+<p>Aliasing:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">}</span>
+
+<span class="c1"># Aliasing </span>
+<span class="n">alias</span> <span class="o">=</span> <span class="n">Uyghur_letters</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;alias&quot;:&#39;</span><span class="p">,</span> <span class="n">alias</span><span class="p">)</span>
+
+<span class="c1"># &quot;alias&quot; we &quot;Uyghur_letters&quot; oxshash obeyktni körsitidu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;alias&quot; we &quot;Uyghur_letters&quot; oxshash obeyktni körsitidu:&#39;</span><span class="p">,</span> <span class="n">alias</span> <span class="ow">is</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;alias&quot;ni özgertishtin burun, Uyghur_letters:&#39;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="c1"># &quot;alias&quot; ni özgertish &quot;Uyghur_letters&quot; gha tesir körsetidu</span>
+<span class="n">alias</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Paqa&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;alias&quot;ni özgertishdin keyin, Uyghur_letters:&#39;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;alias&quot;: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;}
+&quot;alias&quot; we &quot;Uyghur_letters&quot; oxshash obeyktni körsitidu: True
+&quot;alias&quot;ni özgertishtin burun, Uyghur_letters: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;}
+&quot;alias&quot;ni özgertishdin keyin, Uyghur_letters: {&#39;p&#39;: &#39;Paqa&#39;, &#39;b&#39;: &#39;béliq&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Köchürüsh:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">}</span>
+
+<span class="c1"># köchürüsh</span>
+
+<span class="n">copy</span> <span class="o">=</span> <span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;copy&quot;:&#39;</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span>
+
+<span class="c1">#&quot;copy&quot; we &quot;Uyghur_letters&quot; ikkisi oxshash obeyktni körsetmeydu</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;copy&quot; we &quot;Uyghur_letters&quot; oxshash obeyktni körsitidu:&#39;</span><span class="p">,</span> <span class="n">copy</span> <span class="ow">is</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;copy&quot; ni özgertishtin burun, Uyghur_letters:&#39;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+   
+<span class="c1">#&quot;copy&quot; ni özgertish &quot;Uyghur_letters&quot; gha tesir körsetmeydu</span>
+<span class="n">copy</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Paqa&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&quot;copy&quot; ni özgertkendin keyin, Uyghur_letters:&#39;</span><span class="p">,</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;copy&quot;: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;}
+&quot;copy&quot; we &quot;Uyghur_letters&quot; oxshash obeyktni körsitidu: False
+&quot;copy&quot; ni özgertishtin burun, Uyghur_letters: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;}
+&quot;copy&quot; ni özgertkendin keyin, Uyghur_letters: {&#39;p&#39;: &#39;pesh&#39;, &#39;b&#39;: &#39;béliq&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="bashqa-dictionary-meshghulatliri">
+<h2>Bashqa “Dictionary” meshghulatliri<a class="headerlink" href="#bashqa-dictionary-meshghulatliri" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">in</span></code> we <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> lar bilen, “key” yaki “value” ning “dictionary” ning ichide bar-yoqliqini tekshüreleymiz.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">}</span>
+
+<span class="c1">#&quot;key&quot; ning bar-yoqluquni tekshürüsh</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p in Uyghur_letters:&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span> <span class="ow">in</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p not in Uyghur_letters:&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">Uyghur_letters</span><span class="p">)</span>
+
+<span class="c1">#&quot;value&quot; ning bar-yoqluquni tekshürüsh</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pesh in Uyghur_letters:&#39;</span><span class="p">,</span> <span class="s1">&#39;pesh&#39;</span> <span class="ow">in</span> <span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pesh not in Uyghur_letters:&#39;</span><span class="p">,</span> <span class="s1">&#39;pesh&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">Uyghur_letters</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>p in Uyghur_letters: True
+p not in Uyghur_letters: False
+pesh in Uyghur_letters: True
+pesh not in Uyghur_letters: False
+</pre></div>
+</div>
+</div>
+</div>
+<p>“len()” bilen “dictionary” ning uzunliqini tekshürüng:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Uyghur_letters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="s1">&#39;pesh&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;béliq&#39;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lenght of Uyghur_letters:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">Uyghur_letters</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>lenght of Uyghur_letters: 2
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>Uyghur 32 heripi we uninggha munasiwetlik sözlerning “dictionary” tuzung.</p></li>
+<li><p><em>Hemme adem tughulushidinla erkin, izzet-hörmet we hoquqta babbarawer bolup tughulghan. Ular eqilge we wijdan’gha ige hemde bir-birige qërindashliq munasiwitige xas roh bilen muamile qilishi kërek.</em></p>
+<ul class="simple">
+<li><p>Yuquridiki tekisttiki eng köp körülgen söz qaysi (heriplerning chong-kichik yezilishi nezerdin saqit qilinidu)?</p></li>
+<li><p>U soz nechche qetim körulidu? Yuquridiki tekisttiki eng uzun söz qaysi? U sözde nechche herip bar?</p></li>
+</ul>
+</li>
+<li><p>Töwendiki “dictionary” larni öz ara qoshup, yengi bir “dictionary” hasil qiling.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dic1</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">20</span><span class="p">}</span>
+<span class="n">dic2</span><span class="o">=</span><span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">40</span><span class="p">}</span>
+<span class="n">dic3</span><span class="o">=</span><span class="p">{</span><span class="mi">5</span><span class="p">:</span><span class="mi">50</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span><span class="mi">60</span><span class="p">}</span>
+<span class="n">Expected</span> <span class="n">Result</span> <span class="p">:</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mi">60</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>Berilgen melum bir “key” ning bir lughette mewjut yaki emeslikini tekshürüng.</p></li>
+<li><p>1 din 5 kiche bolghan sanlar “key”, u sanlarning kuwadrati “value” bolghan bir “dictionary” tüzüng we uni besip chiqiring.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">input</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">Expected</span> <span class="n">Output</span> <span class="p">:</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>“dictionary” diki barliq “value” larni oz ara kopeyting.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;data1&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;data2&#39;</span><span class="p">:</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;data3&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">}</span>
+<span class="n">Expected</span> <span class="n">result</span><span class="p">:</span> <span class="o">-</span><span class="mi">600</span>
+</pre></div>
+</div>
+</li>
+<li><p>Ikki “list” ni birleshturup bir “dictionary” gha aylandurung.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span><span class="s1">&#39;#008000&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">]</span>
+
+<span class="n">Expected</span> <span class="n">output</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="s1">&#39;#008000&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>Bir “dictionary” ni nusxiliwelip, andin eslidiki “dictionary” gha tesir yetküzmigen asasta, nusxilanghan lughettiki bir maddini özgerting.</p></li>
+<li><p>Berilgen “dictionary” diki bosh maddini chiqiriweting.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Original</span> <span class="n">Dictionary</span><span class="p">:</span>
+<span class="p">{</span><span class="s1">&#39;c1&#39;</span><span class="p">:</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;c2&#39;</span><span class="p">:</span> <span class="s1">&#39;Green&#39;</span><span class="p">,</span> <span class="s1">&#39;c3&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">}</span>
+<span class="n">New</span> <span class="n">Dictionary</span> <span class="n">after</span> <span class="n">dropping</span> <span class="n">empty</span> <span class="n">items</span><span class="p">:</span>
+<span class="p">{</span><span class="s1">&#39;c1&#39;</span><span class="p">:</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;c2&#39;</span><span class="p">:</span> <span class="s1">&#39;Green&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters/data_structure"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../../index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Learn Python &#64; Dr. Dil</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Dilmurat Yusuf<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
